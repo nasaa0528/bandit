@@ -1,0 +1,3 @@
+Find unique line from text file
+
+cat data.txt | sort | uniq -u

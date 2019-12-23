@@ -1,0 +1,8 @@
+read content of dahsed file. 
+The password for the next level is stored in a file called - located in the home directory
+1. 
+$ls la 
+-rw-r-----  1 bandit2 bandit1   33 Oct 16  2018 -
+file 
+read, write permission enabled for bandit2/owner
+read permission enabled for bandit1

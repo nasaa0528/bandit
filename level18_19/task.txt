@@ -1,0 +1,4 @@
+password is stored in readme. 
+.bashrc - kicks out me. have to find way connect without kicking out
+nasantogtokhs-MacBook-Pro:bandit nasaa$ ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme" 		# connects and reads the file
+ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh 												# different method

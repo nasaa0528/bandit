@@ -1,0 +1,9 @@
+use sticky bit, setuid file, and it
+ - makes connection to localhost on port you specify. 
+ - reads line of string from command line, and if line is password of bandit20, it will send password of 21. 
+
+Server: 
+ bandit20@bandit:~$ echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l -p 5000
+
+Client: 
+bandit20@bandit:~$ ./suconnect 5000

@@ -1,0 +1,15 @@
+see cron job at /etc/cron.d to see what command is being executed. 
+
+bandit21@bandit:~$ cd /etc/cron.d
+bandit21@bandit:/etc/cron.d$ cat cronjob_bandit22  	 
+
+# @reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+# * * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+# runs /usr/bin/cronjob_bandit22.sh and gives output to null 
+bandit21@bandit:/etc/cron.d$ cat /usr/bin/cronjob_bandit22.sh
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv 		# it reads password of bandit22 and stores it on /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv file 
+
+bandit21@bandit:/etc/cron.d$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv 		# gives us the password 
+

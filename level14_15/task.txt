@@ -1,0 +1,2 @@
+send password of current level to localhost on port 30000
+bandit14@bandit:~$ echo 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e | nc localhost 30000 		# sending password of current level to localhost 

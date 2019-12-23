@@ -1,0 +1,9 @@
+there is git repo on ssh://bandit27-git@localhost/home/bandit27-git/repo 
+password for get is same as bandit27
+Clone the git and find the password 
+
+bandit27@bandit:~$ mkdir /tmp/git_repo_22
+bandit27@bandit:~$ cd /tmp/git_repo_22
+bandit27@bandit:/tmp/git_repo_22$ git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
+bandit27@bandit:/tmp/git_repo_22$ cd repo/
+bandit27@bandit:/tmp/git_repo_22/repo$ cat README

@@ -1,0 +1,2 @@
+Find different line between 2 files and line in password.new is the password. 
+bandit17@bandit:~$ diff passwords.new passwords.old

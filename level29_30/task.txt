@@ -1,0 +1,9 @@
+clone git at ssh://bandit29-git@localhost/home/bandit29-git/repo. and find password for next level 
+bandit29@bandit:~$ mkdir /tmp/bandit29_repo_22
+bandit29@bandit:~$ cd /tmp/bandit29_repo_22
+bandit29@bandit:/tmp/bandit29_repo_22$ git clone ssh://bandit29-git@localhost/home/bandit29-git/repo
+bandit29@bandit:/tmp/bandit29_repo_22/repo$ cat README.md  												# no password for production 
+bandit29@bandit:/tmp/bandit29_repo_22/repo$ git branch -a
+bandit29@bandit:/tmp/bandit29_repo_22/repo$ git checkout dev
+bandit29@bandit:/tmp/bandit29_repo_22/repo$ cat README.md
+

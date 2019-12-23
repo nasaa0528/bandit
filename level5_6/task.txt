@@ -1,0 +1,14 @@
+Find file from 'inhere' with 
+ - human readable 
+ - 1033 bytes in size 
+ - not executable 
+
+$: find ./ -size 1033c \! -executable -type f
+ - ./ 						from current dir 
+ - 1033c 					1033 byte 
+ - \! -executable 			non-excutable 
+ - type f 					regular file 
+
+bandit5@bandit:~/inhere$ file ./maybehere07/.file2
+./maybehere07/.file2: ASCII text, with very long lines
+bandit5@bandit:~/inhere$ cat ./maybehere07/.file2

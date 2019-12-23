@@ -1,0 +1,3 @@
+Find human readable string which starts with '===='
+$:cat data.txt | strings | grep "===="
+

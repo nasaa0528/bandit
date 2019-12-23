@@ -1,0 +1,9 @@
+Git at ssh://bandit30-git@localhost/home/bandit30-git/repo
+clone and find password
+bandit30@bandit:~$ mkdir /tmp/bandit30_22
+bandit30@bandit:~$ cd /tmp/bandit30_22
+bandit30@bandit:/tmp/bandit30_22$ git clone ssh://bandit30-git@localhost/home/bandit30-git/repo
+bandit30@bandit:/tmp/bandit30_22$ cd repo/
+bandit30@bandit:/tmp/bandit30_22/repo$ git tag				# listing tags 
+bandit30@bandit:/tmp/bandit30_22/repo$ git show secret  	# see message of tage 
+

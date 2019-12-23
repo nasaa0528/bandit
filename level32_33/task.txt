@@ -1,0 +1,5 @@
+Another escape... 
+WELCOME TO THE UPPERCASE SHELL
+$0 - to get shell name, then it goes to sh: shell with login of bandit33 user 
+password from /etc/bandit_pass/bandit33 
+

@@ -1,0 +1,4 @@
+get the password of bandit27 and leave 
+We have one sticky bit enabled file. 
+bandit26@bandit:~$ ./bandit27-do cat /etc/bandit_pass/bandit27
+

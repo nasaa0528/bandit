@@ -1,0 +1,13 @@
+clone ssh://bandit31-git@localhost/home/bandit31-git/repo
+and find password 
+push file to remote host
+
+bandit31@bandit:~$ mkdir /tmp/bandit31_23
+bandit31@bandit:~$ cd /tmp/bandit31_23
+bandit31@bandit:/tmp/bandit31_23$ git clone ssh://bandit31-git@localhost/home/bandit31-git/repo
+bandit31@bandit:/tmp/bandit31_23/repo$ echo 'May I come in?' > key.txt
+bandit31@bandit:/tmp/bandit31_23/repo$ git add key.txt  				# ignored by gititnore, deleted content of gitignore. 
+bandit31@bandit:/tmp/bandit31_23/repo$ cat .gitignore
+bandit31@bandit:/tmp/bandit31_23/repo$ git add key.txt
+bandit31@bandit:/tmp/bandit31_23/repo$ git commit -m "File added"
+bandit31@bandit:/tmp/bandit31_23/repo$ git push origin master  			# Done!

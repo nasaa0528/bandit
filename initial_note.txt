@@ -1,0 +1,7 @@
+Finish first level results how to start next level. Page for level give information how to proceed.
+
+Things to try. 
+ - use man page
+ - shell built-in command 'help command' 
+ - Google it. 
+ - Use IRC

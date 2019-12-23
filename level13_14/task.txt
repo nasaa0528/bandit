@@ -1,0 +1,6 @@
+password is stored in /etc/bandit_pass/bandit14 and can only be read by bandit14. 
+use ssh_key file to connect bandit14 on localhost 
+
+bandit13@bandit:~$ ssh -i sshkey.private bandit14@localhost
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
+

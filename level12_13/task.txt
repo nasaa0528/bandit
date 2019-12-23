@@ -1,0 +1,24 @@
+Hexdump file which is compressed multiple times... 
+convert from hex to bin and uncompress then read file. 
+
+bandit12@bandit:/tmp$ mkdir dec22
+bandit12@bandit:/tmp$ cd dec22
+bandit12@bandit:/tmp/dec22$ cp ~/data.txt .
+bandit12@bandit:/tmp/dec22$ ls
+bandit12@bandit:/tmp/dec22$ xxd -r data.txt > bin_data
+bandit12@bandit:mv bin_data data2.bin
+bandit12@bandit:cp data2.bin bk_data
+bandit12@bandit:/tmp/dec22$ file data2.bin    				# gzip compressed data
+bandit12@bandit:/tmp/dec22$ mv data2.bin data2.bin.gz  		# give correct extension 
+bandit12@bandit:/tmp/dec22$ gzip -d data2.bin.gz  			# creates data2.bin uncompressed file, bzip2 compressed file
+bandit12@bandit:/tmp/dec22$ mv data2.bin data2.bin.bz2 		# Add extension 
+bandit12@bandit:/tmp/dec22$ bzip2 -d data2.bin.bz2  		# decompress from bzip2, create gzip file 
+bandit12@bandit:/tmp/dec22$ gzip -d data4.bin.gz 			# decompress from gzip, create tar archive file 
+bandit12@bandit:/tmp/dec22$ tar -xf data4.bin 				# extract file 
+bandit12@bandit:/tmp/dec22$ tar -xf data5.bin				# extract from tar again 
+bandit12@bandit:/tmp/dec22$ mv data6.bin data6.bin.bz2 		# give extension 
+bandit12@bandit:/tmp/dec22$ bzip2 -d data6.bin.bz2 			# decompress from bzip2, create tar file 
+bandit12@bandit:/tmp/dec22$ tar -xf data6.bin				# extract and create gzip file 
+bandit12@bandit:/tmp/dec22$ mv data8.bin data8.bin.gz		# give extension 
+bandit12@bandit:/tmp/dec22$ gzip -d data8.bin.gz			# decompress gzip file, create ascii file 
+bandit12@bandit:/tmp/dec22$ cat data8.bin 					# read content of ascii file 

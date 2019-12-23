@@ -1,0 +1,4 @@
+Use setuid in home directory and read password from /etc/bandit_pass.
+bandit19@bandit:~$ ls -la
+-rwsr-x---  1 bandit20 bandit19 7296 Oct 16  2018 bandit20-do
+bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20

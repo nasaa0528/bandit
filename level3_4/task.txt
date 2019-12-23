@@ -1,0 +1,8 @@
+Read content of hidden file 'inhere'
+
+ls -la 
+drwxr-xr-x  2 root root 4096 Oct 16  2018 inhere
+
+bandit3@bandit:~$ ls
+inhere
+bandit3@bandit:~$ cat inhere/.hidden

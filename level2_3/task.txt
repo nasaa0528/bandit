@@ -1,0 +1,6 @@
+Read content of spaced filename
+
+1. ls -la 
+-rw-r-----  1 bandit3 bandit2   33 Oct 16  2018 spaces in this filename
+2. cat "spaces in this filename"
+

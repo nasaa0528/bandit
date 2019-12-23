@@ -1,0 +1,5 @@
+Find open tcp port on localhost from 31000 - 32000, 
+Find which one enabled with SSL and only one of them gives us credentials, others are echo servers
+bandit16@bandit:~$ nmap -p 31000-32000 localhost  					# check open ports, 31518, 31790 are open 
+bandit16@bandit:~$ openssl s_client -connect localhost:31790		# create connection using s_client 
+nasantogtokhs-MacBook-Pro:bandit nasaa$ chmod 600 level16_17/key 	# change permission for private key 

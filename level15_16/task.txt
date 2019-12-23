@@ -1,0 +1,2 @@
+send current level password to localhost on port 30001 using ssl encryption 
+bandit15@bandit:~$ openssl s_client -connect localhost:30001		# create connection to localhost with ssl s_client 
